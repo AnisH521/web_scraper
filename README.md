@@ -16,4 +16,5 @@ $ pip install lxml
 * url must be string and must end with '&start='
 * after that setup number_of_movies object within same function with the number of movies information you want to extract
 * then run the code and you will get desired number of movies information starting from page 1
-* NOTE : you must start from first movie indexed '1.' on IMDB's website
+* NOTE1 : you must start from first movie indexed '1.' on IMDB's website
+* NOTE2 : if at page 1 url doesn't end with '&start=' then goto next page and come back to previous page i.e. page 1 and you will get required url
