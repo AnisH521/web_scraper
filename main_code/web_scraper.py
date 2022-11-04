@@ -128,8 +128,9 @@ def full_scraper(link: str, final_movie_index: int) -> List:
 def main() -> None:
     
     url = 'https://www.imdb.com/search/title/?title_type=feature&num_votes=25000,&genres=comedy&start='
+    number_of_movies = 100
     
-    movies_list = full_scraper(url, 100)
+    movies_list = full_scraper(url, number_of_movies)
     df = pd.DataFrame(movies_list)
     df.to_csv('movies.csv', index = False)
 
